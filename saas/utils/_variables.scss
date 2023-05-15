@@ -1,0 +1,41 @@
+:root{
+    --brand-color: #2196F3;
+    --default-text-color: #212121;
+    --secondary-text-color: #757575;
+    --basic-white: #FFFFFF;
+    --background-color: #afb1b8;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  ul,
+  ol {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+
+  body {
+    font-family: "Roboto", sans-serif;
+    color: var(--default-text-color);
+    font-weight: 500;
+  }
+  
+  .container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  .section {
+    padding: 94px 0px 94px 0px;
+  }

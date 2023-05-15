@@ -1,0 +1,46 @@
+.offer{
+    padding-top: 0px;
+
+    & h2{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.166;
+    text-align: center;
+    letter-spacing: 0.03em;
+    }
+
+    &__list {
+      display: flex;
+      padding-top: 50px;
+      justify-content: space-between;
+    }
+
+    &__item--style {
+      position: relative;
+    }
+
+    &__description {
+      position: absolute;
+      bottom: 0;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      padding: 27px, 94px, 27px, 94px ;
+    
+      background: rgba(47, 48, 58, 0.8);
+    
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+    
+      color: var(--basic-white);
+  
+      & span {
+          padding-top:27px;
+          padding-bottom:27px;
+      }
+    }
+  }
+  
