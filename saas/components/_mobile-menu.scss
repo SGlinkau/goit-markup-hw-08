@@ -1,4 +1,6 @@
 .menu-mobile {
+  display: flex;
+  justify-content: flex-start;
   background-color: var(--basic-white);
   flex-direction: column;
 
@@ -82,9 +84,11 @@
 
 .mobile-socials {
   display: flex;
-  margin-left: 40px;
+  justify-content: space-around;
 
   &__link {
+    display: flex;
+    justify-content: space-between;
     color: var(--brand-color);
     font-size: 18px;
     font-weight: 500;
@@ -94,7 +98,6 @@
 }
 
 .mobile-socials__item {
-  margin-right: 20px;
   position: relative;
 
   &:not(:first-child)::after {
@@ -129,8 +132,14 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .menu-mobile{
+    display: none;
+
+    &--style {
     display:none;
   }
+}
+
+
 }
