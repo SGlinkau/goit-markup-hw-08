@@ -1,8 +1,8 @@
 .menu-mobile {
-  background-color: black;
+  background-color: var(--basic-white);
   flex-direction: column;
 
-  &__open {
+  &__open { 
     width: 40px;
     height: 40px;
     background-color: transparent;
@@ -42,6 +42,13 @@
   font-weight: 500;
   line-height: 1.175;
   letter-spacing: 0.02em;
+
+  &:hover,
+  &:focus,
+  &:focus-within{
+    outline: none;
+    color: var(--brand-color)
+  }
 
   &--active {
     color: var(--brand-color);
@@ -100,27 +107,30 @@
     height: 22px;
     background-color: rgba(33, 33, 33, 0.2);
   }
-} 
+}
 
-.backdrop {
-  position: fixed;
-  z-index: 9999;
+.close-btn {
   display: flex;
-  background: rgba(0, 0, 0, 0.2);
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.2);
-  transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  z-index: 99;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--basic-white);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+
+  &__icon {
+    width: 18px;
+    height: 18px;
+  }
 }
 
-.is-hidden {
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
-  transform: scale(10%);
+@media screen and (min-width: 768px) {
+  .menu-mobile{
+    display:none;
+  }
 }
-

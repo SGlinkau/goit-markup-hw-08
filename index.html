@@ -31,6 +31,68 @@
         <li><a href="tel:+48111111111" class="contacts__link "><svg class="contacts__icon" width="10px" height="16px"><use href="images/sprite.svg#icon-phone"></use></svg>+48 111 111 111</a></li>
       </ul>
     </nav>
+    <button mobile-menu-open type="button" class="menu-mobile__open">
+      <svg class="menu-mobile__open-icon">
+        <use href="images/sprite.svg#icon-burger"></use>
+      </svg>
+    </button>
+  </div>
+
+  <div mobile-menu class="menu-mobile backdrop is-hidden">
+    <button
+      type="button"
+      class="close-btn menu-mobile__close-btn"
+      mobile-menu-close
+    >
+      <svg class="close-btn__icon">
+        <use href="images/sprite.svg#icon-mobilezamykacz"></use>
+      </svg>
+    </button>
+
+    <ul class="menu-mobile__list">
+      <li class="menu-mobile__item list">
+        <a
+          class="menu-mobile__link menu-mobile__link--active"
+          href="index.html"
+          >Agencja</a
+        >
+      </li>
+      <li class="menu-mobile__item list">
+        <a class="menu-mobile__link" href="portfolio.html">Portfolio</a>
+      </li>
+      <li class="menu-mobile__item list">
+        <a class="menu-mobile__link" href="#">Kontakt</a>
+      </li>
+    </ul>
+    <ul class="mobile-contacts">
+      <li class="mobile-contacts__item list">
+        <a
+          class="mobile-contacts__link mobile-contacts__link--accent"
+          href="tel:+48111111111"
+          >+48 111 111 111</a
+        >
+      </li>
+      <li class="mobile-contacts__item list">
+        <a class="mobile-contacts__link" href="mailto:info@devstudio.com"
+          >info@devstudio.com</a
+        >
+      </li>
+    </ul>
+    <ul class="mobile-socials">
+      <li class="mobile-socials__item list">
+        <a href="" class="mobile-socials__link">Instagram</a>
+      </li>
+      <li class="mobile-socials__item list">
+        <a href="" class="mobile-socials__link">Twitter</a>
+      </li>
+      <li class="mobile-socials__item list">
+        <a href="" class="mobile-socials__link">Facebook</a>
+      </li>
+      <li class="mobile-socials__item list">
+        <a href="" class="mobile-socials__link">LinkedIn</a>
+      </li>
+    </ul>
+  </div>
     </div>
   </header>
 
@@ -94,7 +156,29 @@
       <h2>Nasz zespół</h2>
         <ul class="team__list">
           <li class="team__item">
-            <img src="./images/P1.jpg" alt="Pracownik pierwszy" width="270" height="260">
+            <source
+                  srcset="
+                    images/images_mainpage/team/Piotrek270x260.jpg    1x,
+                    images/images_mainpage/team/Piotrek270x260@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    images/images_mainpage/team/Piotrek354x374.jpg    1x,
+                    images/images_mainpage/team/Piotrek354x374@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    images/images_mainpage/team/Piotrek450x460.jpg    1x,
+                    images/images_mainpage/team/Piotrek450x460@2x.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+            <img src="images/images_mainpage/team/Piotrek270x260.jpg"
+            alt="Pracownik pierwszy" width="270" height="260">
           <div class="team__description">  
             <h4>John Doe</h4>
             <h5>Product Designer</h5>
@@ -108,7 +192,28 @@
           </li>
           
           <li class="team__item">
-            <img src="./images/P2.jpg" alt="Pracownik drugi" width="270" height="260">
+            <source
+                  srcset="
+                    images/images_mainpage/team/Zaneta270x260.jpg    1x,
+                    images/images_mainpage/team/Zaneta270x260@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    images/images_mainpage/team/Zaneta354x374.jpg    1x,
+                    images/images_mainpage/team/Zaneta354x374@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    images/images_mainpage/team/Zaneta450x460.jpg    1x,
+                    images/images_mainpage/team/Zaneta450x460@2x.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+            <img src="images/images_mainpage/team/Zaneta270x260.jpg" alt="Pracownik drugi" width="270" height="260">
             <div class="team__description">
             <h4>John Doe</h4>
             <h5>Frontend Developer</h5>
@@ -122,7 +227,28 @@
           </li>
           
           <li class="team__item">
-            <img src="./images/P3.jpg" alt="Pracownik trzeci" width="270" height="260">
+            <source
+                  srcset="
+                    images/images_mainpage/team/Mariusz270x260.jpg    1x,
+                    images/images_mainpage/team/Mariusz270x260@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    images/images_mainpage/team/Mariusz354x374.jpg    1x,
+                    images/images_mainpage/team/Mariusz354x374@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    images/images_mainpage/team/Mariusz450x460.jpg    1x,
+                    images/images_mainpage/team/Mariusz450x460@2x.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+            <img src="images/images_mainpage/team/Mariusz270x260.jpg" alt="Pracownik trzeci" width="270" height="260">
             <div class="team__description">
             <h4>John Doe</h4>
             <h5>Marketing</h5>
@@ -136,7 +262,28 @@
           </li>
           
           <li class="team__item">
-            <img src="./images/P4.jpg" alt="Pracownik czwarty" width="270" height="260" onmouseover="this.src='./images/P4alt.jpg';" onmouseout="this.src='./images/P4.jpg';" >
+            <source
+                  srcset="
+                    images/images_mainpage/team/Patryk270x260.jpg    1x,
+                    images/images_mainpage/team/Patryk270x260@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    images/images_mainpage/team/Patryk354x374.jpg    1x,
+                    images/images_mainpage/team/Patryk354x374@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    images/images_mainpage/team/Patryk450x460.jpg    1x,
+                    images/images_mainpage/team/Patryk450x460@2x.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+            <img src="images/images_mainpage/team/Patryk270x260.jpg" alt="Pracownik czwarty" width="270" height="260" onmouseover="this.src='./images/P4alt.jpg';" onmouseout="this.src='images/images_mainpage/team/Patryk270x260.jpg';" >
             <div class="team__description">
             <h4>John Doe</h4>
             <h5>UI Designer</h5>
@@ -208,7 +355,7 @@
   <!-- STOPKA -->
   <footer class="section footer">
     <div class="container"> 
-    <a href="index.html" class="logo"><span>Web</span><span class="logo__accent-white">Studio</span></a>
+    <a href="index.html" class="logo footer__logo"><span>Web</span><span class="logo__accent-white">Studio</span></a>
     <section class="footer--section">
     <address class="address">
       <ul class="footer__addresses"> 
