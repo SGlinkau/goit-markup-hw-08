@@ -1,8 +1,8 @@
 .menu-mobile {
-  background-color: $secondary-light-background-color;
+  background-color: var(--basic-white);
   flex-direction: column;
 
-  &__open {
+  &__open { 
     width: 40px;
     height: 40px;
     background-color: transparent;
@@ -28,23 +28,30 @@
 .menu-mobile__open-icon {
   width: 24px;
   height: 16px;
-  fill: $primary-dark-txt-color;
+  fill: var(--default-text-color);
 
   &:focus,
   &:hover {
-    fill: $accent-color;
+    fill: var(--brand-color);
   }
 }
 
 .menu-mobile__link {
-  color: $primary-dark-txt-color;
+  color: var(--default-text-color);
   font-size: 40px;
   font-weight: 500;
   line-height: 1.175;
   letter-spacing: 0.02em;
 
+  &:hover,
+  &:focus,
+  &:focus-within{
+    outline: none;
+    color: var(--brand-color)
+  }
+
   &--active {
-    color: $accent-color;
+    color: var(--brand-color);
   }
 }
 
@@ -53,7 +60,7 @@
   margin-left: 40px;
 
   &__link {
-    color: $secondary-txt-color;
+    color: var(--secondary-text-color);
     font-size: 24px;
     font-weight: 500;
     line-height: 1.167;
@@ -61,7 +68,7 @@
   }
 
   &__link--accent {
-    color: $accent-color;
+    color: var(--brand-color);
     font-size: 34px;
     font-weight: 500;
     line-height: 1.176;
@@ -78,7 +85,7 @@
   margin-left: 40px;
 
   &__link {
-    color: $accent-color;
+    color: var(--brand-color);
     font-size: 18px;
     font-weight: 500;
     line-height: 1.222;
@@ -99,5 +106,31 @@
     width: 1px;
     height: 22px;
     background-color: rgba(33, 33, 33, 0.2);
+  }
+}
+
+.close-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--basic-white);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+
+  &__icon {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-mobile{
+    display:none;
   }
 }

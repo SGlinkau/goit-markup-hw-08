@@ -1,0 +1,70 @@
+:root{
+    --brand-color: #2196F3;
+    --default-text-color: #212121;
+    --secondary-text-color: #757575;
+    --basic-white: #FFFFFF;
+    --background-color: #afb1b8;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  ul,
+  ol {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+
+  body {
+    font-family: "Roboto", sans-serif;
+    color: var(--default-text-color);
+    font-weight: 500;
+  }
+  
+// <=====MOBILE DESIGN=====>
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    .container {
+    width: 100%;
+    min-width: 320px;
+    margin: 0 auto;
+    padding: 0px 15px 0px 15px;
+  }
+  
+  .section {
+    padding: 60px 0px 60px 0px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1119px) {
+  .container {
+  width: 100%;
+  min-width: 768px;
+  margin: 0 auto;
+  padding: 0px 15px 0px 15px;
+}
+
+.section {
+  padding: 60px 0px 60px 0px;
+}
+}
+
+  @media screen and (min-width: 1200px){
+    .container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  .section {
+    padding: 94px 0px 94px 0px;
+  }
+}

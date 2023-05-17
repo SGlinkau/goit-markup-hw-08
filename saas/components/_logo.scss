@@ -1,0 +1,43 @@
+// <=====MOBILE DESIGN=====>
+@media screen and (min-width: 320px) {
+  .logo{
+    font-family: Raleway;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.192;
+    letter-spacing: 0.03em;
+    color: var(--brand-color);
+
+    &__accent-black{
+      color: var(--default-text-color);
+    }
+
+    &__accent-white{
+      color: var(--basic-white);
+    }
+  }
+}
+  
+   
+  @media screen and (min-width: 1200px) {
+  .logo{
+    font-family: Raleway;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.192;
+    letter-spacing: 0.03em;
+    color: var(--brand-color);
+
+    &__accent-black{
+      color: var(--default-text-color);
+    }
+
+    &__accent-white{
+      color: var(--basic-white);
+    }
+  }
+}
