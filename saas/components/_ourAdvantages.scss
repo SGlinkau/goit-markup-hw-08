@@ -45,6 +45,54 @@
 }
 
 
+@media screen and (min-width: 480px) and (max-width: 1119px){
+  .ourAdvantages {
+    & ul h2 {
+      text-align: center;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 1.142;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: var(--default-text-color);
+      margin-bottom: 10px;  
+    }
+
+    &__list{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+  
+      & li{
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 1.714;
+      letter-spacing: 0.03em;
+      color: var(--secondary-text-color);  
+      }
+    }
+
+    &__item {
+      margin: 0px 15px 0px 15px;
+      padding-bottom: 30px;
+    }
+
+    &__logo {
+      display: flex;
+      background-color: #f5f4fa;
+      height: 120px;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 30px;
+      border-radius: 4px;
+    }
+  }
+}
+
+
+
 @media screen and (min-width: 1200px) {
   .ourAdvantages {
     & ul h2 {
