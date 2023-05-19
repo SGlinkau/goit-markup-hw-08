@@ -1,4 +1,5 @@
 .menu-mobile {
+  width: 100%;
   display: flex;
   justify-content: flex-start;
   background-color: var(--basic-white);
@@ -83,8 +84,9 @@
 }
 
 .mobile-socials {
+  padding: 0px 15px 0px 15px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 
   &__link {
     display: flex;
@@ -103,7 +105,8 @@
   &:not(:first-child)::after {
     position: absolute;
     top: 0;
-    left: -10px;
+    // left: -10px;
+    left: -25%;
     content: "";
     display: block;
     width: 1px;
