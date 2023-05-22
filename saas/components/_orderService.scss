@@ -1,6 +1,7 @@
 // <=====MOBILE=====>
   .orderService {
       width: 100%;
+      height: 400px;
       // padding: 118px 0px 118px 0px;
       background: #2F303A;
       background-image: linear-gradient(
@@ -32,6 +33,7 @@
       color: var(--basic-white);
       letter-spacing: 0.06em;
       text-transform: uppercase;
+      padding-top: 60px;
       }
   
       &__button {
